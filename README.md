@@ -35,6 +35,10 @@
    * in input **Host** sftp://**ec2-100-26-174-190.compute-1.amazonaws.com**
    * name user Nome de usuário: **ubuntu**
    * connect.
+     * case problem's with permission denied <https://stackoverflow.com/questions/19648712/amazon-aws-filezilla-transfer-permission-denied>
+     * use comand in terminal machine ec2 
+       - ```chown -R ec2-user /var/www/html```
+       - ```chmod -R 755 /var/www/html```
   
   
   
