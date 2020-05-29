@@ -25,11 +25,22 @@
      * select fullControl and ok
      * click applied/ok
    * ssh -i "ubuntuServer.pem" **ubuntu**@**ec2-100-26-174-190.compute-1.amazonaws.com**
+   # install nvm
+   2.1 - install nvm 
+         # instalando nvm
+         2.1.2 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+         # definindo varaivel de ambiente
+         2.1.3 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+         2.1.4 nvm install --lts
+         2.1.5 nvm use --lts
+   # install filezilla
+   
 ### Access FTP   (<https://youtu.be/W6BBrz3jKw8>)
 3. ftp connect EC2 (Windows)
    * use puttyGen
    * click load select key_Of_AWS_EC2.pem
-   * save file.ppk
+   * save **private key** file.ppk
    * open fileZilla/edit/config/SFTP
    * Adicionar file key/addFile.key
    * in input **Host** sftp://**ec2-100-26-174-190.compute-1.amazonaws.com**
