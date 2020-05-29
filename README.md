@@ -56,7 +56,8 @@
        - ```chown -R ec2-user /var/www/html```
        - ```chmod -R 755 /var/www/html```
   
-  
-  
+  # Referencias
+  <https://medium.com/@balramchavan/deploy-angular-application-in-nginx-server-on-digitalocean-ubuntu-droplet-28380524811e>
+<https://medium.com/@timmykko/deploying-create-react-app-with-nginx-and-ubuntu-e6fe83c5e9e7>  
   
 
